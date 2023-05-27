@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css?family=Teko:400,600,700&amp;display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400i,700&amp;display=swap");
+@import './assets/scss/Variables.scss';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: #535b65;
+	line-height: 1.5;
+	font-size: 1.2rem;
+	font-family: "Roboto Condensed", sans-serif;
+	// min-width: 320px;
+	background-color: $white-color;
+	overflow-x: hidden;
+	// position: relative
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "Teko", sans-serif;
+}
+label, input{
+    font-family: "Teko", sans-serif;
+}
+a{
+    text-decoration: none !important;
+    color: $primary-color !important;
+}
+a:hover{
+    color: $secendery-color !important;
+    color: #000 !important;
+}
+li{
+    list-style-type: none;
+    display: inline-block;
+}
+ul{
+    margin: 0 !important;
+    padding: 0 !important;
+}

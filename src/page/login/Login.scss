@@ -1,0 +1,117 @@
+@import '../../assets/scss/Variables.scss';
+
+.login {
+    padding-block: 100px;
+    background: url('../../assets/img/login.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+
+    .login_right {
+
+        h3 {
+            font-size: 3rem;
+            color: $white-color;
+        }
+
+        p {
+            font-size: 1rem;
+            color: $white-color;
+            margin-block-end: 2rem;
+        }
+
+        img {
+            width: 100%;
+            margin-top: -4.5rem;
+        }
+    }
+}
+
+
+.l_from form {
+    height: auto;
+    width: 100%;
+    background-color: rgb(255 255 255 / 6%);
+    border-radius: .8rem;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    // border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgb(255 255 255 / 6%);
+    padding: .8rem 3rem;
+    position: relative;
+    border-image: linear-gradient(43deg, #1796fb, #FFC700 78%) 1;
+    border-width: 1px;
+    border-style: solid;
+    
+
+    h3 {
+        font-size: 2.5rem;
+        font-weight: 500;
+        line-height: 2rem;
+        text-align: center;
+        color: $white-color;
+        margin-block-end: 2rem;
+        margin-block-start: 2rem;
+    }
+
+    input {
+        display: block;
+        height: 50px;
+        width: 100%;
+        background-color: rgb(255 255 255 / 6%);
+        border-radius: 0;
+        padding: 0 .8rem;
+        // margin-top: .8rem;
+        font-size: 1rem;
+        font-weight: 300;
+        border: none;
+        margin-block: 1rem !important;
+        color: $white-color;
+        &::placeholder {
+            color: $border-color;
+        }
+        &:focus{
+            outline: 0;
+        }
+     
+    }
+
+    button {
+        margin: auto;
+        display: block !important;
+        color: #fff !important;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+    .social{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        // flex-direction: column;
+        margin-block: 1.2rem;
+        gap: .5rem;
+        text-align: center;
+        .l_ivon{
+            font-size: 1rem;
+            color: $white-color;
+            border: 1px solid rgb(16 81 139);
+            padding: .5rem 2rem;
+            width: 100%;
+            cursor: pointer;
+
+        }
+    }
+    p{
+        color: $white-color;
+        text-align: center;
+        font-size: 1rem;
+        a{
+            color: $secendery-color !important;
+            font-weight: 500;
+            font-size: 1.2rem;
+        }
+    }
+}
