@@ -19,7 +19,7 @@ const Header = () => {
 	const menuItems = <>
 	
 	<Nav.Link href="/">Home</Nav.Link>
-            <Nav.Link href="/services">services</Nav.Link>
+            <Nav.Link href="/allproduct">services</Nav.Link>
             <Nav.Link href="#">shop</Nav.Link>
             <Nav.Link href="#">gallery</Nav.Link>
             <Nav.Link href="#">page</Nav.Link>

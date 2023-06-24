@@ -64,19 +64,19 @@ const Banner = () => {
     return (
         <>
 
-            <section class="s-main-slider">
+            <section className="s-main-slider">
 
-                <div class="main-slide-navigation"></div>
+                <div className="main-slide-navigation"></div>
 
-                <ul class="main-soc-list">
+                <ul className="main-soc-list">
                     <li><a href="https://www.facebook.com/rovadex">facebook</a></li>
                     <li><a href="https://twitter.com/RovadexStudio">twitter</a></li>
                     <li><a href="https://www.instagram.com/rovadex/">instagram</a></li>
                 </ul>
-                <div class="main-slider">
+                <div className="main-slider">
                     <Slider {...settings}>
                         <div className="main-slide">
-                            <div className="main-slide-bg"><img src={svg1} alt=''/></div>
+                            <div className="main-slide-bg"><img src={svg1} alt='' /></div>
                             <div className="container">
                                 <div className="main-slide-info">
                                     <h2 className="title">best bikes for you</h2>
@@ -96,7 +96,7 @@ const Banner = () => {
                             </div>
                         </div>
                         <div className="main-slide">
-                            <div className="main-slide-bg"><img src={svg2} alt=''/></div>
+                            <div className="main-slide-bg"><img src={svg2} alt='' /></div>
                             <div className="container">
                                 <div className="main-slide-info">
                                     <h2 className="title">best bikes for you</h2>
@@ -116,7 +116,7 @@ const Banner = () => {
                             </div>
                         </div>
                         <div className="main-slide">
-                            <div className="main-slide-bg"><img src={svg3} alt=''/></div>
+                            <div className="main-slide-bg"><img src={svg3} alt='' /></div>
                             <div className="container">
                                 <div className="main-slide-info">
                                     <h2 className="title">best bikes for you</h2>
@@ -143,19 +143,20 @@ const Banner = () => {
                 {/* </div> */}
             </section>
 
-            
+
             <section className='form_part'>
                 <div className='container'>
-                    <div className='row'>
+                    <div className='row g-2'>
                         <div className='col-lg-12'>
                             <div className='form_area'>
                                 <h2>FIND THE BIKE</h2>
                                 <form>
-                                    <div class="row align-items-end">
-                                        <div class="col">
-                                            <label for="basic-url" class="form-label">Type</label>
-                                            <select class="form-select select_home_input" aria-label="Default select example">
-                                                <option selected="selected">Mountain bike</option>
+                                    <div className="row align-items-end">
+                                        <div className="col">
+                                            <label htmlFor="basic-url" className="form-label">Type</label>
+                                
+                                            <select defaultValue={'DEFAULT'} className="form-select select_home_input">
+                                                <option value="DEFAULT" disabled>Choose a salutation ...</option>
                                                 <option>Hybrid/Comfort Bike</option>
                                                 <option>Cyclocross Bike</option>
                                                 <option>BMX/Trick Bike</option>
@@ -163,10 +164,11 @@ const Banner = () => {
                                                 <option>Track Bike</option>
                                             </select>
                                         </div>
-                                        <div class="col-lg-3 col-md-6 col-sm-12">
-                                            <label for="basic-url" class="form-label">Wheel Size</label>
-                                            <select class="form-select select_home_input" aria-label="Default select example">
-                                                <option selected="selected">20</option>
+                                        <div className="col-lg-3 col-md-6 col-sm-12">
+                                            <label htmlFor="basic-url" className="form-label">Wheel Size</label>
+                                    
+                                            <select defaultValue={'DEFAULT'} className="form-select select_home_input">
+                                                <option value="DEFAULT" disabled>Choose a salutation ...</option>
                                                 <option>24</option>
                                                 <option>26</option>
                                                 <option>27</option>
@@ -174,10 +176,11 @@ const Banner = () => {
                                                 <option>28</option>
                                             </select>
                                         </div>
-                                        <div class="col-lg-3 col-md-6 col-sm-12">
-                                            <label for="basic-url" class="form-label">Brand</label>
-                                            <select class="form-select select_home_input" aria-label="Default select example">
-                                                <option selected="selected">Pinarello</option>
+                                        <div className="col-lg-3 col-md-6 col-sm-12">
+                                            <label htmlFor="basic-url" className="form-label">Brand</label>
+                                      
+                                            <select defaultValue={'DEFAULT'} className="form-select select_home_input">
+                                                <option value="DEFAULT" disabled>Choose a salutation ...</option>
                                                 <option>Eddy Merckx</option>
                                                 <option>Specialized</option>
                                                 <option>Giant</option>
@@ -185,8 +188,8 @@ const Banner = () => {
                                                 <option>BMC</option>
                                             </select>
                                         </div>
-                                        <div class="col-lg-3 col-md-6 col-sm-12">
-                                            <button type="submit" class="submit_btn">Get Consultion</button>
+                                        <div className="col-lg-3 col-md-6 col-sm-12">
+                                            <button type="submit" className="submit_btn">Get Consultion</button>
                                         </div>
                                     </div>
                                 </form>
