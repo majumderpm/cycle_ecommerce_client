@@ -6,6 +6,8 @@ import Login from '../page/login/Login';
 import Register from '../page/register/Register';
 import AllProduct from '../allproduct/AllProduct';
 import Details from '../details/Details';
+import AddServices from '../page/addservices/AddServices';
+import AddReviews from '../page/addreviews/AddReviews';
 // import { productApi } from '../page/home/products/ProductsDetails';
 
 
@@ -35,6 +37,14 @@ const Router = createBrowserRouter([
             {
                 path: '/register',
                 element: <Register/>
+            },
+            {
+                path: '/addservices',
+                element: <AddServices />
+            },
+            {
+                path: '/addreviews',
+                element: <AddReviews />
             },
         ]
 

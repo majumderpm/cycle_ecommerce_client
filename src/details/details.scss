@@ -1,3 +1,6 @@
+
+
+
 .nav_img img{
     width: 100%;
     height: 100%;
@@ -33,12 +36,13 @@
     width: calc(100% - 70px);
 }
 .product-single-details .new-price {
-    color: #222529;
-    font-size: 2.4rem;
+    color: #FFC700;
+    font-size: 24px;
     letter-spacing: -0.02em;
     vertical-align: middle;
     line-height: 0.8;
     margin-left: 3px;
+    font-weight: 700;
 }
 .single-info-list li strong {
     color: #222529;
@@ -51,9 +55,9 @@
     width: 50%;
 }
 .product-single-details{
-    padding-left: 30px;
+    padding-left: 50px !important;
     padding-top: 50px;
-    padding-right: 100px;
+    padding-right: 40px !important;
 }
 .price-box {
     margin-bottom: 20px;
@@ -64,4 +68,10 @@
 }
 .quick_view{
     padding-bottom: 40px;
+}
+.product-desc p{
+    display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
 }

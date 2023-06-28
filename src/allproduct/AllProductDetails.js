@@ -39,10 +39,7 @@ const AllProductDetails = ({ allProduct }) => {
                             {/* <BiCart /> */}
                             <span>details</span>
                         </Link>
-                        <Link class="submit_btn" to="/">
-                            <BiCart />
-                            <span>add to cart</span>
-                        </Link>
+                       
                     </div>
                 </div>
 

@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { Link, NavLink, useParams } from 'react-router-dom';
 import Slider from 'react-slick';
 import { CiHome } from "react-icons/ci";
+import './details.scss';
+import { AiFillStar } from 'react-icons/ai';
 
 const Details = () => {
 
@@ -21,8 +23,8 @@ const Details = () => {
   useEffect(() => {
     fetch(`http://localhost:5000/services/${_id}`)
       .then(res => res.json())
-      // .then(data => setSingleProduct(data));
-      .then(data => console(data));
+      .then(data => setSingleProduct(data?.[0]));
+      // .then(data => console(data));
 
   }, [])
 
@@ -75,15 +77,17 @@ const Details = () => {
               </div>
               <div className="product-desc">
                 <p>
-                  {singleProduct.description}
-                </p>
+                  {singleProduct.description} 
+                 
+                </p> <NavLink to=''>see all</NavLink>
               </div>
+              {/* <div className='rate'>
+                        <AiFillStar />
+                        <span>{singleProduct.rating.rate}</span>
+                    </div> */}
 
-              <div className="product-action">
-                <button className="btn btn-dark add-cart" title="Add to Cart">Add to
-                  Cart</button>
-              </div>
-              <hr className="divider mb-0 mt-0" />
+              
+            
             </div>
           </div>
         </div>

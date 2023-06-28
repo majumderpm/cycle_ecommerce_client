@@ -5,10 +5,11 @@ import { BiLogInCircle } from "react-icons/bi";
 import loginimg from '../../assets/img/login-img.png';
 import { FcGoogle } from "react-icons/fc";
 import { FaFacebookF } from "react-icons/fa";
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { authContext } from '../../contexts/authProvider/AuthProvider';
 
 const Register = () => {
+    const navigator = useNavigate();
     
     const {createUser} = useContext(authContext);
     const handelSingup = event => {
@@ -24,6 +25,7 @@ const Register = () => {
         .then(result => {
             const user = result.user;
             console.log(user);
+            navigator('/login');
         })
         .catch(err => console.error(err));
     }
